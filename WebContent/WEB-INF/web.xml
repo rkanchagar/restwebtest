@@ -16,27 +16,27 @@
  
  <servlet>
   <display-name>restsrrvtest</display-name>
-  <servlet-name>restservtest</servlet-name>
+  <servlet-name>restservtest1</servlet-name>
   <servlet-class>org.raghav.restwebtest.cnt.RestServ</servlet-class>
  </servlet>
  <servlet-mapping>
-  <servlet-name>restservtest</servlet-name>
+  <servlet-name>restservtest1</servlet-name>
   <url-pattern>/restserv</url-pattern>
  </servlet-mapping>
  
  
  
   <servlet>
-    <servlet-name>JerseyRESTService</servlet-name>
+    <servlet-name>jersyrk</servlet-name>
     <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
     <init-param>
       <param-name>com.sun.jersey.config.property.packages</param-name>
-      <param-value>restwebtest.org.raghav.restwebtest.cnt.JersyServ</param-value>
+      <param-value>org.raghav.restwebtest.cnt</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>JerseyRESTService</servlet-name>
+    <servlet-name>jersyrk</servlet-name>
     <url-pattern>/api/*</url-pattern>
   </servlet-mapping>
  
